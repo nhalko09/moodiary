@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  {% if entry %}
+    <h1>Edit Mood from {{ entry.date }}</h1>
+  {% else %}
+    <h1>Add New Mood</h1>
+  {% endif %}
+</div>
+
+<form action="" method="post" class="form-container">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
+  <button type="submit" class="btn submit">
+    {% if entry %}Update{% else %}Save{% endif %} Entry
+  </button>
+</form>
+{% endblock %}

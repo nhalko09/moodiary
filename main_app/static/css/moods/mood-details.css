@@ -1,0 +1,68 @@
+.mood-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .mood-details {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .mood-details h1 {
+    font-size: 2rem;
+    color: #4f46e5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mood-details h2 {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-details p {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+  }
+  
+  .mood-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .btn-edit {
+    background-color: #f59e0b;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #d97706;
+  }
+  
+  .btn-delete {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #dc2626;
+  }
