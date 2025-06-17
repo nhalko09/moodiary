@@ -1,0 +1,99 @@
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #efe5dc; 
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+    color: #5a3e35; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-header p {
+    font-size: 1.1rem;
+    color: #6b5047; 
+  }
+  
+  .entry-container {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+
+  .card {
+    flex: 1 1 calc(50% - 1rem); 
+    min-width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #5a3e35; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: #6b5047;
+    font-size: 0.9rem;
+  }
+ 
+  .empty-state {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #8d6b58;
+    padding: 2rem;
+  }
+  
+ 
+  .cta {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #a97b67; 
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8d6b58;
+  }

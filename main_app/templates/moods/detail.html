@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/moods/mood-detail.css' %}" />
+{% endblock %}
+
+{% block content %}
+<section class="mood-container">
+  <div class="mood-details">
+    <h1>{{ entry.mood }}</h1>
+    <h2>Date: {{ entry.date }}</h2>
+    <p><strong>Notes:</strong></p>
+    <p>{{ entry.notes|default:"No notes added." }}</p>
+
+    <div class="mood-actions">
+      <a href="{% url 'mood-update' entry.pk %}" class="btn btn-edit">Edit</a>
+      <a href="{% url 'mood-delete' entry.pk %}" class="btn btn-delete">Delete</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

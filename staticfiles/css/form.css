@@ -1,0 +1,82 @@
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+    color: #5a3e35; 
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form table {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+  }
+  
+  form th,
+  form td {
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+  }
+  
+  form th {
+    width: 30%;
+    vertical-align: top;
+    font-weight: bold;
+    color: #3e2c23;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #a97b67;
+    outline: none;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.submit {
+    background-color: #a97b67;
+    color: white;
+  }
+  
+  .btn.submit:hover {
+    background-color: #8d6b58;
+  }

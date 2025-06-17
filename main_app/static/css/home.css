@@ -1,0 +1,85 @@
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #efe5dc;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #5a3e35;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #6b5047; 
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #a97b67; 
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #8d6b58;
+}
+
+.btn-secondary {
+  background-color: #d8cbb8;
+  color: #3e2c23;
+}
+
+.btn-secondary:hover {
+  background-color: #c4b6a4;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.feature {
+  max-width: 500px;
+  text-align: center;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #5a3e35;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  color: #6b5047;
+  font-size: 1rem;
+}

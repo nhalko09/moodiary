@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  {% load static %}
+ <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Moodiary</h1>
+    <p>Track your emotions. Reflect on your day. Grow emotionally.</p>
+    <div class="cta-buttons">
+      <a href="{% url 'mood-index' %}" class="btn btn-secondary">View My Journal</a>
+      <a href="{% url 'mood-create' %}" class="btn btn-primary">Add New Entry</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>Daily Tracking</h3>
+    <p>Log how you feel each day and notice patterns over time.</p>
+  </div>
+  <div class="feature">
+    <h3>Reflect & Grow</h3>
+    <p>Write notes to understand what affects your mood and why.</p>
+  </div>
+  <div class="feature">
+    <h3>Private & Simple</h3>
+    <p>No distractions. Just a clean, personal space for your emotional journey.</p>
+  </div>
+</section>
+{% endblock %}
