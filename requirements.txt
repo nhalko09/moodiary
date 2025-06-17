@@ -1,5 +1,4 @@
 asgiref==3.8.1
-<<<<<<< HEAD
 dj-database-url==3.0.0
 Django==5.2.3
 gunicorn==23.0.0
@@ -8,9 +7,4 @@ psycopg2-binary==2.9.10
 python-dotenv==1.1.0
 sqlparse==0.5.3
 typing_extensions==4.14.0
-=======
-Django==5.2.3
-psycopg2-binary==2.9.10
-sqlparse==0.5.3
->>>>>>> 95804de4b862edc7240affada1275c7b81e0c9c0
 whitenoise==6.9.0

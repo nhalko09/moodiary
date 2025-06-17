@@ -11,14 +11,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-<<<<<<< HEAD
+
 import os
 from dotenv import load_dotenv
-load_dotenv()
-=======
-from dotenv import load_dotenv
-import os
->>>>>>> 95804de4b862edc7240affada1275c7b81e0c9c0
+
 import dj_database_url
 
 
@@ -89,10 +85,7 @@ if 'ON_HEROKU' in os.environ:
     DATABASES = {
         "default": dj_database_url.config(
             env='DATABASE_URL',
-<<<<<<< HEAD
             default='sqlite:///db.sqlite3',
-=======
->>>>>>> 95804de4b862edc7240affada1275c7b81e0c9c0
             conn_max_age=600,
             conn_health_checks=True,
             ssl_require=True,
@@ -102,11 +95,8 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-<<<<<<< HEAD
             'NAME': 'moodiary',
-=======
-            'NAME': '<dbnamehere>',
->>>>>>> 95804de4b862edc7240affada1275c7b81e0c9c0
+
             # The value of 'NAME' should match the value of 'NAME' you replaced.
         }
     }
@@ -161,9 +151,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 95804de4b862edc7240affada1275c7b81e0c9c0
